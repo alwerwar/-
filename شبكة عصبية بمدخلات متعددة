@@ -1,0 +1,11 @@
+import numpy as np
+weights = np.array([0.1, 0.2, 0.6])
+def neural_network(input, weights):
+    pred = input.dot(weights)
+    return pred
+Score_goals= np.array([2.5, 3.5, 4, 3])
+Passes = np.array([0.60, 0.75, 0.70, 0.56])
+Performanse = np.array([0.45, 0.44, 0.76, 0.55])
+input = np.array([Score_goals [0], Passes [0], Performanse [0]])
+pred = neural_network(input,weights)
+print(pred)
